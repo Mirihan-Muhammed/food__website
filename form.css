@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    }
+    body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #eee;
+    }
+    body {
+    background: url("fruitveg.jpeg") no-repeat center;
+    background-size: cover;
+    }
+    h1, h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    }
+    h2 {
+    margin: 0 0 0 8px;
+    }
+    .main-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 671px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5); 
+    }
+    .left-part, form {
+    padding: 35px;
+    flex: 1;
+    }
+    .left-part {
+    text-align: center;
+    
+    }
+    .fa-fish {
+    font-size: 82px;
+    }
+    form {
+    background: rgba(0, 0, 0, 0.7); 
+    
+    }
+    .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    .info {
+    display: flex;
+    flex-direction: column;
+    }
+    input, select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+    }
+    input::placeholder {
+    color: #eee;
+    }
+    button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    width: 100%;
+    border: none;
+    background: #048304; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    }
+    button:hover {
+    background:#16d4bb;
+    }
+    @media only screen and (max-width:600px){
+        body{
+           background-size: 1200px 1500px;
+
+        }
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5); 
+            font-size: 220px;
+            height: 900px;
+            }
+            .left-part, form {
+            padding: 35px;
+            flex: 1;
+            height: 720px;
+            }
+            .left-part {
+            text-align: center;
+            }
+            .fa-fish {
+            font-size: 70px;
+            }
+            form {
+            background: rgba(0, 0, 0, 0.7); 
+            }
+            .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            }
+            .info {
+            display: flex;
+            flex-direction: column;
+            }
+    }
+   
+   

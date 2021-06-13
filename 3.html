@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Dairy</title>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    
+      </script>
+
+    <nav>
+        <ul class="nav-bar">
+        <li><a href="1.html">Vegetables & Fruits</a></li>
+        <li><a href="2.html">Protein</a></li>
+        <li><a class="active" href="3.html">Dairy</a></li>
+        <li><a href="4.html">Starchy Food</a></li> 
+        <div class="dropdown">     
+          <button class="dropbtn" onclick="myFunction()">Extra info!
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+              <a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/">Vegetables & Fruits</a>
+              <a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/protein/">Protein</a>
+              <a href="https://www.hsph.harvard.edu/nutritionsource/milk/">Dairy</a>
+              <a href="https://www.hsph.harvard.edu/nutritionsource/carbohydrates/fiber/">Starchy Food</a>
+            </div>
+          </div>
+</ul>
+    </nav>
+    <div class="container">
+        
+   <div class="dairy">
+    <div class="d2">
+        <img src="strawberries.jpg" alt="Yougrt-strawberries">
+    </div>
+     <div class="d1">
+               
+  <h3>How much food from the Dairy Group is needed daily?</h3>
+
+  <p>The amount of dairy you need depends on your age, sex, height, weight, and level of physical activity. For women, the amount can also depend on whether you are pregnant or breastfeeding. About 90% of Americans do not get enough dairy, therefore most individuals would benefit by increasing intake of fat-free or low-fat dairy, whether from milk (including lactose-free milk), yogurt, and cheese, or from fortified soy milk or yogurt.</p>
+  
+  <h3>What counts as a cup in the Dairy Group?</h3>
+  <p>In general, 1 cup of milk, yogurt, or soymilk (soy beverage), 1 ½ ounces of natural cheese, or 2 ounces of processed cheese can be considered as 1 cup from the Dairy Group.</p>  
+        </div>
+   </div>
+  </div>
+
+
+   <div class="types">
+    <div class="pic">
+        <img src="Milk.jpg" alt="milk" style="width:100%">
+        <div class="info">
+          <p><b>Milk</b><br>Milk contains nine essential nutrients like high-quality protein and more.A glass of milk (200ml) will give you calcium, protein, iodine, potassium, phosphorus and vitamins B2 and B12.
+          </p>
+            <hr>
+            <a target="_blank" href="https://www.healthline.com/nutrition/foods/milk">Read more</a>
+        </div>
+      </div>
+      <div class="pic">
+        <img src="Cheese.jpg" alt="cheese" style="width:100%">
+        <div class="info">
+          <p><b>Cheese</b><br>Cheese contains calcium and phosphorus, which can help build and maintain strong bones and teeth. It also contains protein which helps build and repair muscles.</p>
+          <hr>
+          <a target="_blank" href="https://www.medicalnewstoday.com/articles/299147">Read more</a>
+        </div>
+    </div>
+      <div class="pic">
+        <img src="Yogurt.jpg" alt="Yogurt" style="width:100%">
+        <div class="info">
+          <p><b>Yogurt</b><br>Yogurt is a fermented food and its live and active cultures are a source of probiotics, which help digestive health. Yogurt is packed with protein, calcium, B vitamins and more!</p>
+          <hr>
+          <a target="_blank" href="https://www.healthline.com/nutrition/7-benefits-of-yogurt">Read more</a>
+        </div>
+      </div>
+      <div class="pic">
+        <img src="protein.webp" alt="Whey protein" style="width:100%">
+        <div class="info">
+          <p><b>Whey protein</b><br>Whey is one of two major high-quality proteins naturally found in cow’s milk. Whey contains all of the essential amino acids or “building blocks” your body needs.</p>
+          <hr>
+          <a target="_blank" href="https://www.medicalnewstoday.com/articles/263371">Read more</a>
+        </div>
+      </div>
+        
+      </div>  
+</body>
+</html>
+

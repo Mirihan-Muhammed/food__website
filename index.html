@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <title>Registration Form</title>
+
+  </head>
+  <body>
+
+<script>
+function validation(){
+  // store the value that user enter in variables
+  var user = document.getElementById('t').value;
+  var user2 =  document.getElementById('l').value;
+  var pass = document.getElementById('pass').value;
+  
+  var str = "Hello";
+
+  var email = document.getElementById('email').value;
+  var mobile = document.getElementById('mobile').value;
+  
+  var myform = document.getElementById('myform');
+   // to check if that field empty or not
+  
+ 
+ //  to accert a name of 3 letters at least
+  if(!user.match(/^[A-Za-z]+$/)){
+      alert("only letters allowed in First name field");
+      return false;
+  }
+  if(!user2.match(/^[A-Za-z]+$/)){
+    alert("only letters allowed in Last name field");
+    return false;
+}
+  if(mobile.length!=11){
+      alert("*Please Enter avalid number");
+      return false;
+  }
+  
+  if(pass[0].toUpperCase() == str[0])
+{
+   alert('First character is upper case.');  
+   return false;
+}
+
+  if(pass.search(/[ ]/)!=-1){
+     alert("must not include a space");
+  return false;
+ }
+  // limit the lenght of the  pass
+  if(pass.length !=8 ){
+    alert("please write a passward no more no less than 8 character");
+      return false;
+  }
+    // must enclud numbers
+ if(pass.search(/[0-9]/)==-1){
+      
+      alert("must incluce at least a number");
+      return false;
+  }
+  //not to accept without upper characters
+  if(pass.search(/[A-Z]/)==-1){
+alert("must include at leasrt 1 upper character");
+      return false;
+  }
+  // not to accept without lower characters
+ if(pass.search(/[a-z]/)==-1){
+      alert("must include at least 1 lowwer character");
+  return false;
+ }
+  // not accept without special characters
+  if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\=\+\<\>\,\?]/)==-1){
+     
+         alert("must include 1 special character");
+      return false;
+    }
+  if(pass.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]$/)){
+    
+      alert("Must start with uppercase letter");
+      return false;
+    }
+ 
+    if(email.indexOf("@") == -1 || email.length < 6){
+    alert("Please Enter valid Email");
+     return false;
+}
+}
+    </script>
+
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-fish"></i>
+        <h1>Register to our website</h1>
+        <p>We provide free information about food types</p>
+      </div>
+      <form id="myform" action="1.html" method="get" Onsubmit="return validation()" autocomplete="on">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" id="t" placeholder="First name" required>
+          <input class="lname" type="text" name="name" id="l" placeholder="Last name" required>
+          <input class="add" type="text" placeholder="Address" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input id="mobile" type="tel" class="control" maxlength="11" name="phone" placeholder="Phone number" required>
+          <input type="password" id="pass" value="" placeholder="Password">
+          <div><label for="gender">Gender:</label>
+            <select id="gen" name="gender">
+              <option value="volvo">Male</option>
+              <option value="saab">Female</option>
+            </select> 
+        </div>
+        <button type="submit" href="1.html">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
