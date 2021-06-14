@@ -41,14 +41,14 @@ function validation(){
       return false;
   }
   
-  if(pass[0].toUpperCase() == str[0])
+  if(pass[0].search(/[A-Z]/)==-1)
 {
-   alert('First character is upper case.');  
+   alert('The password must start with uppercase letter.');  
    return false;
 }
 
   if(pass.search(/[ ]/)!=-1){
-     alert("must not include a space");
+     alert("The password must not include a space");
   return false;
  }
   // limit the lenght of the  pass
@@ -59,28 +59,23 @@ function validation(){
     // must enclud numbers
  if(pass.search(/[0-9]/)==-1){
       
-      alert("must incluce at least a number");
-      return false;
-  }
-  //not to accept without upper characters
-  if(pass.search(/[A-Z]/)==-1){
-alert("must include at leasrt 1 upper character");
+      alert("The password must incluce at least 1 number");
       return false;
   }
   // not to accept without lower characters
  if(pass.search(/[a-z]/)==-1){
-      alert("must include at least 1 lowwer character");
+      alert("The password must include at least 1 lower character");
   return false;
  }
   // not accept without special characters
   if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\=\+\<\>\,\?]/)==-1){
      
-         alert("must include 1 special character");
+         alert("The password must include 1 special character");
       return false;
     }
   if(pass.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]$/)){
     
-      alert("Must start with uppercase letter");
+      alert("The password start with uppercase letter");
       return false;
     }
  
